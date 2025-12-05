@@ -1,0 +1,83 @@
+:root {
+    --clr-primary: #4A90E2;
+    --clr-secondary: #374151;
+    --clr-accent: #D0021B;
+    --clr-accent-dark: #b70116;
+    --clr-bg: #f9f9f9;
+    --offset-len: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);
+    color: var(--clr-primary);
+    font-family: Verdana, sans-serif, system-ui;
+    font-size: 1rem;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.language-tag {
+    background-color: var(--clr-secondary);
+    color: var(--clr-bg);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.arial {
+    font-family: arial, Arial, Helvetica, sans-serif, system-ui;
+    font-weight: bold;
+}
+
+.primary-button {
+    background-color: var(--clr-accent);
+    color: var(--clr-bg);
+}
+
+.primary-button:hover {
+    background-color: var(--clr-accent-dark);
+}
+
+.secondary-button {
+    color: var(--clr-secondary);
+    border: 1px solid var(--clr-secondary);
+}
+
+.secondary-button:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-bg);
+    border-color: var(--clr-primary);
+}
+
+.acc-clr-text-hover:hover {
+    color: var(--clr-accent);
+}
+
+.img-offset-left {
+    position: relative;
+    right: var(--offset-len);
+    top: var(--offset-len)
+}
+
+.img-offset-right {
+    position: relative;
+    left: var(--offset-len);
+    top: var(--offset-len)
+}
+
+.contact-field {
+    color: var(--clr-bg);
+    background-color: var(--clr-primary);
+}
+
+.contact-field:focus {
+    outline: none;
+}

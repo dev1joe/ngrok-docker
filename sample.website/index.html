@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future You - Aspiring Front-End Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- [________ Header ________] -->
+    <header>
+        <nav class="container-fluid flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">Future You</a>
+            <ul class="flex space-x-3 md:space-x-6">
+                <li><a href="#about" class="acc-clr-text-hover text-lg transition-colors">About</a></li>
+                <li><a href="#projects" class="acc-clr-text-hover text-lg transition-colors">Projects</a></li>
+                <li><a href="#contact" class="acc-clr-text-hover text-lg transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- [________ Hero Section ________] -->
+    <main class="container-fluid py-20 min-h-[70vh] flex items-center">
+        <div class="w-full grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
+            <div class="row-[2/3] md:row-[1/1] text-center md:text-left md:self-center">
+                <p class="text-3xl text-bold" style="color: var(--clr-accent)">Hello,</p>
+                <h1 class="text-4xl md:text-6xl my-6 arial">I'm Future You</h1>
+                <h2 class="text-3xl md:text-5xl font-semibold mt-2 arial" style="color: var(--clr-secondary)">Aspiring Front-End Developer</h2>
+                <div
+                    class="mt-8 flex flex-col md:flex-row justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="#contact" class="primary-button font-bold py-3 px-6 rounded-full transition-colors">Let's Talk</a>
+                    <a href="#projects" class="secondary-button font-bold py-3 px-6 rounded-full transition-colors">My Projects</a>
+                </div>
+            </div>
+            <div class="row-[1/2] md:row[1/1] justify-self-center md:justify-self-end w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl"
+                style="border: 8px solid var(--clr-accent); box-shadow: 3px 3px 7px var(--clr-primary);">
+                <img src="./resources/office-man.png" alt="Future You" class="object-cover w-full h-full">
+            </div>
+        </div>
+    </main>
+
+    <!-- [________ Tech Stack Section ________] -->
+    <!-- background: linear-gradient(90deg,rgba(208, 2, 27, 1) 25%, rgba(74, 144, 226, 1) 75%); -->
+    <!-- rgba(237, 237, 237, 0.601); -->
+    <div id="stack" class="mb-8" style="color: var(--clr-bg);background: linear-gradient(90deg,rgba(208, 2, 27, 1) 0%, rgba(74, 144, 226, 1) 100%);">
+        <div class="container-fluid flex justify-between flex-wrap text-xl/10 md:text-3xl/6 font-bold">
+            <p class="px-2">HTML5</p>
+            <p class="px-2">CSS</p>
+            <p class="px-2">Javascript</p>
+            <p class="px-2">Node.js</p>
+            <p class="px-2">React</p>
+            <p class="px-2">Git</p>
+            <p class="px-2">GitHub</p>
+        </div>
+    </div>
+
+    <!-- [________ About Section ________] -->
+    <section id="about" class="container-fluid py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div>
+                <h2 class="text-3xl mb-6 arial">About me</h2>
+                <p class="leading-relaxed mb-6" style="color: var(--clr-secondary)">
+                    I started my front-end development journey from photography. Throughout it, I learned to create, problem-solve,
+                    and pay close attention to the fine details of a project. I've worked on a diverse range of
+                    projects, from small web applications to large-scale enterprise solutions.
+                </p>
+                <div class="grid grid-cols-3 gap-4 text-center mt-8">
+                    <div>
+                        <p id="project-count" class="text-4xl font-bold" style="color: var(--clr-accent)" data-count="120" data-duration="5000">120+</p>
+                        <p class="text-sm" style="color: var(--clr-secondary)">Completed Projects</p>
+                    </div>
+                    <div>
+                        <p id="client-sat-count" class="text-4xl font-bold" style="color: var(--clr-accent)" data-count="95" data-duration="5000">95%</p>
+                        <p class="text-sm" style="color: var(--clr-secondary)">Client satisfaction</p>
+                    </div>
+                    <div>
+                        <p id="experience-count" class="text-4xl font-bold" style="color: var(--clr-accent)" data-count="10" data-duration="5000">10+</p>
+                        <p class="text-sm" style="color: var(--clr-secondary)">Years of experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-self-center">
+                <div class="space-y-8">
+                    <div class="flex items-center space-x-4">
+                        <i class="fa-solid fa-code text-3xl" style="color: var(--clr-accent)"></i>
+                        <div>
+                            <h3 class="text-xl arial">Website Development</h3>
+                            <p class="text-md" style="color: var(--clr-secondary)">Building and maintaining modern
+                                websites</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fa-solid fa-mobile-alt text-3xl" style="color: var(--clr-accent)"></i>
+                        <div>
+                            <h3 class="text-xl arial">App Development</h3>
+                            <p class="text-md" style="color: var(--clr-secondary)">Creating intuitive mobile and desktop
+                                apps</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fa-solid fa-server text-3xl" style="color: var(--clr-accent)"></i>
+                        <div>
+                            <h3 class="text-xl arial">Website Hosting</h3>
+                            <p class="text-md" style="color: var(--clr-secondary)">Managing server-side operations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [________ Projects Section ________] -->
+    <section id="projects" class="container-fluid py-16">
+        <h2 class="text-3xl text-center mb-12 arial">Projects</h2>
+
+        <!-- Projects Cards -->
+        <div class="proj-cards-container">
+            <div class="proj-card grid grid-rows-[minmax(0.5fr, 1fr)_1fr] md:grid-rows-1 md:grid-cols-2 gap-8 mb-14">
+                <div class="card-content">
+                    <h3 class="text-2xl font-bold mb-2 arial">Movie Titles API</h3>
+                    <div class="flex space-x-2 mb-4">
+                        <span class="language-tag">HTML</span>
+                        <span class="language-tag">API</span>
+                        <span class="language-tag">JavaScript</span>
+                        <span class="language-tag">React</span>
+                    </div>
+                    <p class="mb-4" style="color: var(--clr-secondary)">
+                        A simple web application that fetches a list of movie titles from a public API. This project
+                        demonstrates the use of a simple fetch function to retrieve data from a public API and display
+                        it on
+                        a web page. The user can search for a movie title and view details like release date, genre,
+                        etc.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="primary-button font-bold py-2 px-4 rounded-full text-sm transition-colors">
+                            View Github
+                        </a>
+                        <a href="#" class="secondary-button font-bold py-2 px-4 rounded-full text-sm transition-colors">
+                            View project
+                            <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-img md:p-6 box-border">
+                    <div class="md:border-3 border-(--clr-primary)">
+                        <div class="relative md:top-2 md:right-2 md:border-3 border-(--clr-accent)">
+                            <div class="relative md:top-2 md:right-2 md:img-offset-left shadow-xl">
+                                <img class="w-full" src="./resources/coding.jpg" alt="project's image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proj-card grid grid-rows-[minmax(0.5fr, 1fr)_1fr] md:grid-rows-1 md:grid-cols-2 gap-8 mb-14">
+                <div class="card-content md:row-[1/1] md:col-[2/3]">
+                    <h3 class="text-2xl font-bold mb-2 arial">Javascript Calculator</h3>
+                    <div class="flex space-x-2 mb-4">
+                        <span class="language-tag">HTML</span>
+                        <span class="language-tag">API</span>
+                        <span class="language-tag">JavaScript</span>
+                    </div>
+                    <p class="mb-4" style="color: var(--clr-secondary)">
+                        A simple JavaScript calculator that performs basic arithmetic operations. The calculator has a
+                        clean, minimalist design and is fully functional. It demonstrates the use of JavaScript to
+                        handle
+                        user input and perform calculations.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="primary-button font-bold py-2 px-4 rounded-full text-sm transition-colors">
+                            View Github
+                        </a>
+                        <a href="#" class="secondary-button font-bold py-2 px-4 rounded-full text-sm transition-colors">
+                            View project
+                            <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-img md:p-6 box-border md:row-[1/1] md:col-[1/2]">
+                    <div class="md:border-3 border-(--clr-primary)">
+                        <div class="relative md:top-2 md:left-2 md:border-3 border-(--clr-accent)">
+                            <div class="relative md:top-2 md:left-2 shadow-xl">
+                                <img class="w-full" src="./resources/coding.jpg" alt="project's image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="proj-card grid grid-rows-[minmax(0.5fr, 1fr)_1fr] md:grid-rows-1 md:grid-cols-2 gap-8 mb-14">
+                <div class="card-content">
+                    <h3 class="text-2xl font-bold mb-2 arial">Battleship</h3>
+                    <div class="flex space-x-2 mb-4">
+                        <span class="language-tag">HTML</span>
+                        <span class="language-tag">API</span>
+                        <span class="language-tag">JavaScript</span>
+                    </div>
+                    <p class="mb-4" style="color: var(--clr-secondary)">
+                        A simple battleship game. This project demonstrates the power of HTML, CSS, and vanilla
+                        JavaScript
+                        to create an interactive web-based game. The game is played with two players on a 10x10 grid,
+                        where
+                        each player tries to sink the other's ships. </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="primary-button font-bold py-2 px-4 rounded-full text-sm transition-colors">
+                            View Github
+                        </a>
+                        <a href="#" class="secondary-button font-bold py-2 px-4 rounded-full text-sm transition-colors">
+                            View project
+                            <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-img md:p-6 box-border">
+                    <div class="md:border-3 border-(--clr-primary)">
+                        <div class="relative md:top-2 md:right-2 md:border-3 border-(--clr-accent)">
+                            <div class="relative md:top-2 md:right-2 shadow-xl">
+                                <img class="w-full" src="./resources/coding.jpg" alt="project's image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [________ Contact Section ________] -->
+    <section id="contact" class="container-fluid py-16">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl mb-2 arial" style="color: var(--clr-primary)">Have a project?</h2>
+            <h2 class="text-3xl arial" style="color: var(--clr-accent)">Let's talk!</h2>
+        </div>
+        <form class="max-w-2xl mx-auto space-y-6">
+            <div class="flex space-x-4">
+                <input type="text" placeholder="Name" name="name" class="contact-field w-1/2 p-3 rounded-md">
+                <input type="email" placeholder="Email" name="email" class="contact-field w-1/2 p-3 rounded-md">
+            </div>
+            <textarea placeholder="Message" name="message" rows="5" class="contact-field w-full p-3 rounded-md"></textarea>
+            <button type="submit" class="primary-button w-full font-bold py-3 rounded-md transition-colors">Send</button>
+        </form>
+    </section>
+
+        <!-- [________ Footer ________] -->
+    <footer class="text-gray-400 text-center py-8 mt-12" style="background-color: var(--clr-secondary);">
+        <p>Designed with <span class="text-red-500">&hearts;</span> by Future You</p>
+        <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="acc-clr-text-hover"><i class="fab fa-dribbble text-xl"></i></a>
+            <a href="#" class="acc-clr-text-hover"><i class="fab fa-behance text-xl"></i></a>
+            <a href="#" class="acc-clr-text-hover"><i class="fab fa-instagram text-xl"></i></a>
+            <a href="#" class="acc-clr-text-hover"><i class="fab fa-linkedin-in text-xl"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
