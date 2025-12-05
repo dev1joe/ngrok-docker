@@ -1,12 +1,31 @@
 services:
-    ngrok:
-      image: ngrok/ngrok:latest
-      container_name: ngrok
-      restart: unless-stopped
-      command:
-        - "http"
-        - "--domain=${NGROK_DOMAIN}"
-      environment:
-        - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
-      ports:
-        - "4040:4040"  # ngrok web interface
+  web-server:
+    image: nginx:alpine
+    container_name: web-server
+    restart: unless-stopped
+    volumes:
+      - ./sample.website:/usr/share/nginx/html:ro  # Mount your HTML files
+    ports:
+      - "8080:80"  # Internal web server
+    networks:
+      - ngrok-network
+  
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: ngrok
+    restart: unless-stopped
+    command:
+      - "http"
+      - "web-server:80"
+      - "--domain=${NGROK_DOMAIN}"
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+    ports:
+      - "4040:4040"  # ngrok web interface
+    depends_on:
+      - web-server
+    networks:
+      - ngrok-network
+
+networks:
+  ngrok-network:
